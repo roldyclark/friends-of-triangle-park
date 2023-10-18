@@ -1,0 +1,73 @@
+body {
+  max-width: 700px;
+  padding: 15px;
+  margin: auto;
+  background-color: rgb(252, 214, 158);
+  color: rgb(39, 39, 39);
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#park-img {
+  width: 100%;
+  border-radius: 30% 5% 30% 5%;
+}
+
+.flower-gif {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.hummingbird-gif {
+  display: block;
+  margin: auto;
+}
+
+form input,
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+button,
+.donate-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: rgb(59, 122, 59);
+  border-width: 0;
+  color: white;
+  width: fit-content;
+  vertical-align: text-bottom;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}

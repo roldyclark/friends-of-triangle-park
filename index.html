@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Friends of Triangle Park</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-	<script src="index.js"></script>
+    <header>
+      <img class="flower-gif" src="fallingflowersblue.gif">
+      <h1>Friends of Triangle Park</h1>
+    </header>
+    <section>
+      <img src="triangle-park.jpg" id="park-img" />
+      <p>
+        Triangle Park is a small urban park nestled in the Union Hill
+        neighborhood of Richmond at the intersections of Jefferson Avenue, E.
+        Clay Street, and N. 23rd Street. Once the site of an abandoned gas
+        station, which was eventually demolished by the city, the neglected lot
+        underwent a remarkable transformation thanks to dedicated neighbors.
+        What began with a single Chinese Elm and two benches (rescued from the
+        former park surrounding the Richmond Coliseum) evolved over the next
+        decade into a thriving community space. In 2023, the park came to life
+        with the installation of a pollinator garden established in memory of a
+        neighbor’s beloved sister. Shortly afterward, in the fall of 2023, a
+        more extensive beautification effort was undertaken by
+        <a href="https://verdantrichmond.org/" target="_blank">Verdant Richmond</a>
+        and a group of corporate volunteers. This initiative led to the planting
+        of a river birch, a dogwood, serviceberry trees, and magnolias, along
+        with native hydrangeas, yarrow, baptisia, rudbeckia, milkweed, and
+        hundreds of tulips and daffodils. Today, Friends of Triangle Park
+        continues to ensure the park’s upkeep and development, shaping it into
+        an inviting green space for the Union Hill and Church Hill communities,
+        as well as local wildlife.
+      </p>
+    </section>
+    <section>
+      <h2>Consider donating to help us maintain the park</h2>
+      <img class="hummingbird-gif" src="Hummer-Flying-Ani.gif">
+      <div>
+        <form
+          id="donate"
+          target=""
+          action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"
+        >
+          <input type="hidden" name="cmd" value="_donations" /><input
+            type="hidden"
+            name="business"
+            value="Lawrence.miller@verdantrichmond.org"
+          /><input
+            type="hidden"
+            name="item_name"
+            value="Friends of Triangle Park"
+          /><input type="hidden" name="item_number" value="FOTP" /><input
+            type="hidden"
+            name="currency_code"
+            value="USD"
+          /><input
+            type="hidden"
+            name="notify_url"
+            value="https://verdantrichmond.org/wp-admin/admin-post.php?action=add_wpedon_button_ipn"
+          /><input type="hidden" name="lc" value="EN_US" /><input
+            type="hidden"
+            name="bn"
+            value="WPPlugin_SP"
+          /><input
+            type="hidden"
+            name="return"
+            value="https://verdantrichmond.org/thank-you/"
+          /><input
+            type="hidden"
+            name="cancel_return"
+            value="https://verdantrichmond.org/home"
+          /><input
+            class="donate-button"
+            type="image"
+            name="submit"
+            alt="Donate"
+            style="border: none"
+          />
+        </form>
+      </div>
+    </section>
+    <section>
+      <h2>
+        Join our mailing list for volunteer opportunities and park updates
+      </h2>
+      <img class="hummingbird-gif" src="Waterer-ani.gif">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="b90c6829-193f-4476-9d03-9d0d634414b8"
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="Triangle Park Email Signup"
+        />
+        <input type="email" name="email" placeholder="your email" required />
+        <input
+          type="hidden"
+          name="message"
+          value="I'd like to join the mailing list!"
+        />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    <footer><small>© Friends of Triangle Park</small></footer>
   </body>
 </html>
