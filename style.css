@@ -46,6 +46,7 @@ button {
 button,
 .donate-button {
   font-size: 20px;
+  font-weight: 400;
   padding: 10px 20px;
   background-color: rgb(59, 122, 59);
   border-width: 0;
