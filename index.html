@@ -6,28 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta property="og:image" content="triangle-park.jpg" />
     <title>Friends of Triangle Park</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        line-height: 1.3;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      header {
+        color: #fff;
+        padding: 2rem 0;
+        font-size: 1.3rem;
+        text-align: center;
+        background: linear-gradient(45deg, #ffb042, #5cc6ff);
+        background-size: 200% 200%;
+        animation: sunrise 10s infinite;
+      }
+      @keyframes sunrise {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 15px;
+      }
+      footer {
+        padding: 50px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        color: #4cafaf;
+      }
+      img {
+        border-radius: 3%;
+      }
+
+      button,
+      input {
+        background-color: #ffffff;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #222222;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+          'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        padding: 13px 23px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        touch-action: manipulation;
+        transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+          transform 0.1s;
+        user-select: none;
+        -webkit-user-select: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      button:focus-visible {
+        box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+        transition: box-shadow 0.2s;
+      }
+
+      button:active {
+        background-color: #f7f7f7;
+        border-color: #000000;
+        transform: scale(0.96);
+      }
+
+      button:disabled {
+        border-color: #dddddd;
+        color: #dddddd;
+        cursor: not-allowed;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <img id="logo" src="logo.png" />
+      <img id="logo" src="logo.png" width="200px" />
     </header>
-    <section>
-      <img src="triangle-park.jpg" id="park-img" />
-      <p>
-        Triangle Park, located in Richmond’s Church Hill neighborhood, was once
-        an abandoned gas station lot. Thanks to dedicated neighbors, it has
-        become a thriving community space. The park began with a Chinese Elm and
-        two benches salvaged from the former Richmond Coliseum. A raised
-        pollinator garden was constucted in 2023 in memory of a neighbor’s
-        sister. Now encircled by native plant gardens, Friends of Triangle Park
-        continues to maintain and enhance this central greenspace for the
-        community and wildlife.
-      </p>
-    </section>
-    <section>
-      <h2>Consider donating to help us maintain the park</h2>
-      <div>
+    <main>
+      <section>
+        <img src="./IMG_1580.jpeg" width="100%" />
+        <h2>Triangle Park: Gas Station to Greenspace</h2>
+        <p>
+          Triangle Park, located in Richmond’s Church Hill neighborhood, was
+          once an abandoned gas station lot. Thanks to dedicated neighbors, it
+          has become a thriving community space. The park began with an elm tree
+          and two benches salvaged from the former Richmond Coliseum. A raised
+          pollinator garden was constucted in 2023 in memory of a neighbor’s
+          sister. Now encircled by native plant gardens, Friends of Triangle
+          Park continues to maintain and enhance this central greenspace for
+          neighbors and wildlife.
+        </p>
+      </section>
+      <section>
+        <h3>
+          Consider donating and joining our mailing list for news and volunteer
+          opportunities
+        </h3>
         <a
           href="https://www.gofundme.com/f/transform-triangle-park-in-church-hill"
           target="_blank"
@@ -35,30 +134,27 @@
         >
           <button>Donate</button>
         </a>
-      </div>
-    </section>
-    <section>
-      <h2>Join our mailing list for news and volunteer opportunities</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input
-          type="hidden"
-          name="access_key"
-          value="b90c6829-193f-4476-9d03-9d0d634414b8"
-        />
-        <input
-          type="hidden"
-          name="subject"
-          value="Triangle Park Email Signup"
-        />
-        <input type="email" name="email" placeholder="your email" required />
-        <input
-          type="hidden"
-          name="message"
-          value="I'd like to join the mailing list!"
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-    </section>
-    <footer><small>© Friends of Triangle Park</small></footer>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="b90c6829-193f-4476-9d03-9d0d634414b8"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Triangle Park Email Signup"
+          />
+          <input type="email" name="email" placeholder="your email" required />
+          <input
+            type="hidden"
+            name="message"
+            value="I'd like to join the mailing list!"
+          />
+          <button type="submit">Join Mailing List</button>
+        </form>
+      </section>
+      <footer>© Friends of Triangle Park</footer>
+    </main>
   </body>
 </html>
